@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aayush Dahal — Software Engineer specializing in web development, machine learning, deep learning, and NLP.">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Aayush Dahal — Software Engineer</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ===== LOADER ===== -->
+    <div class="loader" id="loader">
+        <div class="loader__inner">
+            <div class="loader__spinner"></div>
+            <p class="loader__text">Loading</p>
+        </div>
+    </div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-top" id="back-top" title="Back to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-bracket">&lt;</span>Aayush<span class="nav__logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav__overlay" id="nav-overlay"></div>
+
+            <div class="nav__menu" id="nav-menu">
+                <button class="nav__close" id="nav-close"><i class='bx bx-x'></i></button>
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#work" class="nav__link">Work</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <li><a href="admin.html" class="nav__link nav__link--admin" title="Admin Panel"><i class='bx bx-shield-quarter'></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                    <i class='bx bx-moon'></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HOME ===== -->
+        <section class="home section" id="home">
+            <div class="home__container grid container">
+                <div class="home__data">
+                    <div class="home__greeting">Hello, World! 👋</div>
+                    <h1 class="home__title">
+                        I'm <span class="gradient-text">Aayush Dahal</span>
+                    </h1>
+                    <div class="home__typewriter">
+                        <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </div>
+                    <p class="home__description">
+                        Crafting elegant solutions at the intersection of web development, machine learning, and artificial intelligence.
+                    </p>
+                    <div class="home__cta">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class='bx bx-send'></i> Get In Touch
+                        </a>
+                        <a href="#work" class="btn btn--outline">
+                            <i class='bx bx-briefcase'></i> View Work
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/aayush-dahal-5706911a5/" class="home__social-link" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/Aayush-002" class="home__social-link" target="_blank" rel="noopener" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.facebook.com/dahalaayush076" class="home__social-link" target="_blank" rel="noopener" title="Facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </div>
+
+                <div class="home__img">
+                    <div class="home__img-wrapper">
+                        <div class="home__img-ring ring-1"></div>
+                        <div class="home__img-ring ring-2"></div>
+                        <div class="home__img-ring ring-3"></div>
+                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <image class="home__blob-img" x="50" y="60" href="perfil.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-link">
+                    <i class='bx bx-mouse'></i>
+                    <span>Scroll Down</span>
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <div class="about__img-wrapper">
+                        <img src="about.png" alt="Aayush Dahal">
+                        <div class="about__img-shape"></div>
+                    </div>
+                </div>
+
+                <div class="about__data">
+                    <h3 class="about__name">Software Engineer &amp; AI Enthusiast</h3>
+
+                    <div class="about__info">
+                        <div class="about__info-item">
+                            <i class='bx bx-award'></i>
+                            <h4>Experience</h4>
+                            <span>3+ Years</span>
+                        </div>
+                        <div class="about__info-item">
+                            <i class='bx bx-briefcase'></i>
+                            <h4>Projects</h4>
+                            <span>20+ Done</span>
+                        </div>
+                        <div class="about__info-item">
+                            <i class='bx bx-support'></i>
+                            <h4>Support</h4>
+                            <span>Always On</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Aayush Dahal is a versatile software engineer with expertise in web design, machine learning, deep learning, and natural language processing (NLP). As a skilled web developer, I craft visually appealing and user-friendly digital experiences. My proficiency in machine learning and deep learning showcases strong analytical prowess, contributing to innovative AI-driven solutions.
+                    </p>
+                    <p class="about__description">
+                        My expertise in NLP enables me to work with human language data, paving the way for applications such as intelligent chatbots and language translation systems. Beyond my professional skills, I have a passion for exploring new places, reflecting an adventurous spirit and a deep curiosity about the world. I balance my tech endeavors with a love for reading books, indulging in diverse genres to expand my knowledge and perspective.
+                    </p>
+
+                    <div class="about__cta">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class='bx bx-send'></i> Contact Me
+                        </a>
+                        <a href="#" class="btn btn--outline">
+                            <i class='bx bx-download'></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My Technical Level</span>
+
+            <div class="skills__container container grid">
+                <!-- Development Skills -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class='bx bx-code-curly'></i> Development
+                    </h3>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bxl-html5'></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bxl-css3'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bxl-javascript'></i>
+                                    <span class="skills__name">JavaScript</span>
+                                </div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <iconify-icon icon="akar-icons:python-fill"></iconify-icon>
+                                    <span class="skills__name">Python</span>
+                                </div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML Skills -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class='bx bx-brain'></i> AI &amp; Machine Learning
+                    </h3>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bx-network-chart'></i>
+                                    <span class="skills__name">Machine Learning</span>
+                                </div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bx-chip'></i>
+                                    <span class="skills__name">Deep Learning</span>
+                                </div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bx-chat'></i>
+                                    <span class="skills__name">NLP</span>
+                                </div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__header">
+                                <div class="skills__info">
+                                    <i class='bx bx-bar-chart-alt-2'></i>
+                                    <span class="skills__name">Data Analysis</span>
+                                </div>
+                                <span class="skills__percentage">78%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WORK ===== -->
+        <section class="work section" id="work">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most Recent Work</span>
+
+            <div class="work__filters container">
+                <button class="work__filter active" data-filter="all">All</button>
+                <button class="work__filter" data-filter="web">Web Dev</button>
+                <button class="work__filter" data-filter="ai">AI / ML</button>
+                <button class="work__filter" data-filter="design">Design</button>
+            </div>
+
+            <div class="work__container container grid">
+                <article class="work__card" data-category="web">
+                    <div class="work__img-wrapper">
+                        <img src="work1.jpg" alt="Web Project 1" class="work__img">
+                        <div class="work__overlay">
+                            <div class="work__overlay-content">
+                                <h3>Web Project 1</h3>
+                                <p>Full-stack web application</p>
+                                <div class="work__links">
+                                    <a href="#" class="work__link"><i class='bx bx-link-external'></i></a>
+                                    <a href="#" class="work__link"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__info">
+                        <span class="work__category">Web Development</span>
+                        <h3 class="work__title">Web Project 1</h3>
+                    </div>
+                </article>
+
+                <article class="work__card" data-category="ai">
+                    <div class="work__img-wrapper">
+                        <img src="work2.jpg" alt="ML Project" class="work__img">
+                        <div class="work__overlay">
+                            <div class="work__overlay-content">
+                                <h3>ML Pipeline</h3>
+                                <p>Machine learning solution</p>
+                                <div class="work__links">
+                                    <a href="#" class="work__link"><i class='bx bx-link-external'></i></a>
+                                    <a href="#" class="work__link"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__info">
+                        <span class="work__category">AI / Machine Learning</span>
+                        <h3 class="work__title">ML Pipeline</h3>
+                    </div>
+                </article>
+
+                <article class="work__card" data-category="design">
+                    <div class="work__img-wrapper">
+                        <img src="work3.jpg" alt="Design Project" class="work__img">
+                        <div class="work__overlay">
+                            <div class="work__overlay-content">
+                                <h3>UI Design System</h3>
+                                <p>UI/UX design work</p>
+                                <div class="work__links">
+                                    <a href="#" class="work__link"><i class='bx bx-link-external'></i></a>
+                                    <a href="#" class="work__link"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__info">
+                        <span class="work__category">UI/UX Design</span>
+                        <h3 class="work__title">UI Design System</h3>
+                    </div>
+                </article>
+
+                <article class="work__card" data-category="web">
+                    <div class="work__img-wrapper">
+                        <img src="work4.jpg" alt="Web Project 2" class="work__img">
+                        <div class="work__overlay">
+                            <div class="work__overlay-content">
+                                <h3>Web Project 2</h3>
+                                <p>Responsive web design</p>
+                                <div class="work__links">
+                                    <a href="#" class="work__link"><i class='bx bx-link-external'></i></a>
+                                    <a href="#" class="work__link"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__info">
+                        <span class="work__category">Web Development</span>
+                        <h3 class="work__title">Web Project 2</h3>
+                    </div>
+                </article>
+
+                <article class="work__card" data-category="ai">
+                    <div class="work__img-wrapper">
+                        <img src="work5.jpg" alt="NLP Project" class="work__img">
+                        <div class="work__overlay">
+                            <div class="work__overlay-content">
+                                <h3>NLP Chatbot</h3>
+                                <p>Natural language processing</p>
+                                <div class="work__links">
+                                    <a href="#" class="work__link"><i class='bx bx-link-external'></i></a>
+                                    <a href="#" class="work__link"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__info">
+                        <span class="work__category">AI / NLP</span>
+                        <h3 class="work__title">NLP Chatbot</h3>
+                    </div>
+                </article>
+
+                <article class="work__card" data-category="design">
+                    <div class="work__img-wrapper">
+                        <img src="work6.jpg" alt="Brand Design" class="work__img">
+                        <div class="work__overlay">
+                            <div class="work__overlay-content">
+                                <h3>Brand Identity</h3>
+                                <p>Brand identity design</p>
+                                <div class="work__links">
+                                    <a href="#" class="work__link"><i class='bx bx-link-external'></i></a>
+                                    <a href="#" class="work__link"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__info">
+                        <span class="work__category">Design</span>
+                        <h3 class="work__title">Brand Identity</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get In Touch</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class='bx bx-envelope contact__card-icon'></i>
+                        <div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">aayush.dahal@email.com</span>
+                            <a href="mailto:aayush.dahal@email.com" class="contact__card-link">
+                                Send a message <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <i class='bx bxl-linkedin contact__card-icon'></i>
+                        <div>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">Aayush Dahal</span>
+                            <a href="https://www.linkedin.com/in/aayush-dahal-5706911a5/" class="contact__card-link" target="_blank" rel="noopener">
+                                Connect with me <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <i class='bx bxl-github contact__card-icon'></i>
+                        <div>
+                            <h3 class="contact__card-title">GitHub</h3>
+                            <span class="contact__card-data">Aayush-002</span>
+                            <a href="https://github.com/Aayush-002" class="contact__card-link" target="_blank" rel="noopener">
+                                View repositories <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contact-form" novalidate>
+                    <div class="contact__form-group">
+                        <label for="contact-name">Name <span>*</span></label>
+                        <div class="contact__form-input">
+                            <i class='bx bx-user'></i>
+                            <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="contact-email">Email <span>*</span></label>
+                        <div class="contact__form-input">
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="contact-subject">Subject</label>
+                        <div class="contact__form-input">
+                            <i class='bx bx-edit'></i>
+                            <input type="text" id="contact-subject" name="subject" placeholder="What is this about?">
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="contact-message">Message <span>*</span></label>
+                        <div class="contact__form-input contact__form-input--textarea">
+                            <i class='bx bx-message-detail'></i>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact__form-status" id="form-status"></div>
+                    <button type="submit" class="btn btn--primary contact__submit">
+                        <i class='bx bx-send'></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__brand">
+                <a href="#home" class="footer__logo">
+                    <span>&lt;</span>Aayush<span>/&gt;</span>
+                </a>
+                <p class="footer__tagline">Building the future, one line at a time. Passionate about code, design, and intelligent systems.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__social-section">
+                <h4>Follow Me</h4>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/aayush-dahal-5706911a5/" class="footer__social-link" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/Aayush-002" class="footer__social-link" target="_blank" rel="noopener" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.facebook.com/dahalaayush076" class="footer__social-link" target="_blank" rel="noopener" title="Facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="Twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Aayush Dahal. All rights reserved.</p>
+            <a href="admin.html" class="footer__admin-link" title="Admin"><i class='bx bx-lock'></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
