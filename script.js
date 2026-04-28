@@ -127,27 +127,6 @@ function typeWriter() {
 }
 setTimeout(typeWriter, 800);
 
-/* ===== SKILLS PROGRESS BAR ANIMATION ===== */
-const skillsSection = document.getElementById('skills');
-let skillsAnimated = false;
-
-function animateSkills() {
-    if (skillsAnimated) return;
-    const bars = document.querySelectorAll('.skills__progress-bar');
-    bars.forEach(bar => {
-        const width = bar.getAttribute('data-width');
-        bar.style.width = width + '%';
-    });
-    skillsAnimated = true;
-}
-
-const skillsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) animateSkills();
-    });
-}, { threshold: 0.2 });
-
-if (skillsSection) skillsObserver.observe(skillsSection);
 
 /* ===== WORK FILTER ===== */
 const filterBtns = document.querySelectorAll('.work__filter');
