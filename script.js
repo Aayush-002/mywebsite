@@ -89,11 +89,11 @@ backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smo
 
 /* ===== TYPEWRITER EFFECT ===== */
 const phrases = [
-    'Software Engineer',
+    'Computer Engineer',
+    'AI Developer',
     'Web Developer',
     'ML Engineer',
     'NLP Specialist',
-    'Problem Solver',
 ];
 let phraseIndex = 0;
 let charIndex = 0;
