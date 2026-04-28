@@ -1,3 +1,7 @@
+/* ===== COPYRIGHT YEAR ===== */
+const yearEl = document.getElementById('copy-year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 /* ===== LOADER ===== */
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
